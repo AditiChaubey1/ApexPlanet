@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e3a59;
+  color: white;
+  padding: 15px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Form Styling */
+.form-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+}
+
+/* To-Do Section */
+.todo-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#todoInput {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-section button {
+  padding: 10px;
+  margin-left: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-section button:hover {
+  background-color: #0056b3;
+}
+
+#todoList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#todoList li {
+  margin-top: 10px;
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#todoList li button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
