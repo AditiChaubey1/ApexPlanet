@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e84949;
+}
+
+section {
+  margin: 40px 0;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Quiz Section */
+#answers button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #e84949;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#nextBtn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Carousel Section */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+/* Joke Section */
+.api-section button {
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel img {
+    margin: 10px 0;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  #answers button {
+    padding: 8px 16px;
+  }
+}
+
