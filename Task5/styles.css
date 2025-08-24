@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f1115;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  background: #141823;
+  padding: 10px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #76e4c2;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.icon-btn {
+  background: #1f2330;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.badge {
+  background: #76e4c2;
+  padding: 2px 6px;
+  border-radius: 50%;
+  color: #000;
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+}
+
+.hero-slide {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn {
+  background: #76e4c2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #76e4c2;
+  color: #76e4c2;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #141823;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #76e4c2;
+  font-weight: 700;
+}
+
+.cart {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: #1a1d27;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart.open {
+  right: 0;
+}
+
+.cart-head, .cart-foot {
+  padding: 15px;
+  border-bottom: 1px solid #2a2d38;
+}
+
+.cart-foot {
+  border-top: 1px solid #2a2d38;
+  margin-top: auto;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  background: #141823;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
